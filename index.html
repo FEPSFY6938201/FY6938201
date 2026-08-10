@@ -11,27 +11,40 @@
         <hr>
       </head>
       <style>
-          table {
-            font-family: arial, sans-serif;
-            border-collapse: collapse;
-            width: 30%;
+         
+        body {
+          font-family: Arial, sans-serif;
           }
 
-          td, th {
-            border: 1px solid #dddddd;
-            test-align: left;
-            padding: 8px;
+        h2 {
+          font-family: Arial, sans-serif;
+          font-size: 24px;
+          }      
+        
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 30%;
           }
 
-          tr:nth-child(even) {
-            background-colour: #dddddd
+        td, th {
+          border: 1px solid #dddddd;
+          test-align: left;
+          padding: 8px;
+          }
+
+        tr:nth-child(even) {
+          background-colour: #dddddd
+          }
             
-        </style>
+      </style>
 
         <style>
           p.article-text {
             margin-left: 30px;
             margin-right: 30px;
+            line-height: 1.6;
+            font-size: 16px;
           }
 
         </style>
@@ -53,31 +66,31 @@
   <hr>  
     <h2 id="Abstract"> Abstract</h2>
     
-      <p class="article-text">Abstract</p>
+      <p class="article-text">We investigated the question of “How large can we build?” and found that it requires many different mathematical and physical considerations, such as scaling and the L³ relationship between length and volume/mass, material strength and selection, buckling and structural stability, trade-off when adding material and mass limitations. We conclude that there isn’t a single universal numerical limit determined by a single physical factor that a building can be constructed to, but rather how modern engineering addresses all factors and finds the best fit solution, such as geometry and structural systems.</p>
     
     <h2 id="Introduction">1. Introduction</h2>
 
-     <p class="article-text">Introduction</p>
+     <p class="article-text">One of the first ever large structures was the well-known story of the Tower of Babel (Genesis 11:4), which had a goal of reaching the heavens but failed due to divine intervention. Humanity has longed to reach the stars for many centuries, and we can see this all around us today with famous megacities such as Shanghai and Dubai. But what limits how large these structures can become? A few issues arise with building so high; scaling a building to such a magnitude causes its volume and mass to increase substantially faster than its length. Then there is an issue with gravity and how the building will be supported under Earth's gravity. In this article, we will explore how the limits of constructing large structures must face the problems of material strength, structural stability and mathematical scaling.</p>
     
     <h2 id="The Mathematics of Scaling">2. The Mathematics of Scaling</h2>
     
-      <p class="article-text">The Mathematics of Scaling</p>
+      <p class="article-text">Imagine a simple cube representing a structure, and now assign it a characteristic length L and mass M. When we scale this cube and all its dimensions by the same factor, a few interesting things happen. As shown in Table 1, doubling every dimension gives only two times the length, which results in the surface area becoming four times larger; this causes the volume to increase eightfold, and assuming constant density, so does the mass, as it depends on volume. These are the key scaling problems when aiming to build large structures such as the Burj Khalifa. This demonstrates how a structure becoming twice as large doesn’t increase its mass by two as well and how the mass increases much faster than the characteristic length, which contributes to the structural demand of the building. Real-world buildings are not perfect cubes; therefore, there are other more challenging obstacles engineers must overcome, such as providing a suitable geometry and structural systems as construction becomes larger. But the cube gives us a simple mathematical model for understanding the underlying scaling problem. Furthermore, the additional mass must be supported by Earth’s gravitational field, which also adds to the increasing structural demands the planners of such a project must overcome.</p>
     
     <h2 id="Gravity and Structural Loading">3. Gravity and Structural Loading</h2>
     
-      <p class="article-text">Gravity and Structural Loading</p>
+      <p class="article-text">The increased mass isn’t just an abstract number; gravity exerts a force on the mass, which reflects in how we must plan around it to make sure our buildings are as stable and reliable as possible. Weight is the force produced by gravity acting on mass; therefore, the equation W = mg, where W is weight, m is mass and g is the gravitational field strength, measured in N/kg. If a building has more mass, it experiences more weight, which must be distributed safely through the structure and ultimately into the foundation and ground. Therefore, the lower parts of the building must support the loads from above them. Table 1 shows mass increases as L³, assuming a constant gravitational field strength; the building's own weight scales with L³. Increasing self-weight of a building requires several compressive and loading demands, and at larger scales, structural stability becomes another important aspect to consider. (Ferretti, D’Annibale and Luongo, 2023) This in turn raises the question of whether the materials at our disposal can handle the tension and compression of projects mankind would wish to build in years to come.</p>
     
     <h2 id="Material Strength and Structural Stability">4. Material Strength and Structural Stability</h2>
     
-      <p class="article-text">Material Strength and Structural Stability</p>
+      <p class="article-text">All construction materials have a force and stress limit that they can withstand, accompanied by the strength-to-weight ratio relative to their density/weight, which is particularly essential when trying to maximise structure size and integrity. (Günel and Ilgin, 2007) Certain parts of a structure can experience different forces of loading, such as compression, which pushes material together and tension, which pulls material apart; these factors contribute to the loads created by the building’s own weight. (Günel and Ilgin, 2007) This introduces “buckling”, which refers to when certain members of a building can become unstable and buckle under compressive loading, which is particularly relevant as buildings become taller and slenderer. (Mandal and Calladine, 2000; Ferretti, D’Annibale and Luongo, 2023) Our cube model showed mass increasing as L³, however, engineers can’t keep adding material indefinitely because that leads to an increase in mass and, in turn, adds gravitational loading. This creates a problem where more material increases strength; however, it also increases mass and makes the structure heavier. Modern structural engineering addresses this trade-off through methods that aren’t just “use more concrete/steel” but rather use creative geometrical shapes and patterns and structural systems which help balance out the huge forces the building would otherwise be experiencing. (Günel and Ilgin, 2007)</p>
     
     <h2 id="Real-World Megastructures">5. Real-World Megastructures</h2>
     
-      <p class="article-text"> Real-World Megastructures</p>
+      <p class="article-text">One example of engineers pushing structural height is the world-renowned Burj Khalifa; its design isn’t just a huge stack of material miraculously still standing during 200 to 250 km/h winds that it experiences at its apex. (Baker and Pawlikowski, 2012) The actual underlying reason it hasn’t crumbled yet is due to its very practical geometry and structural system, which are designed to withstand the forces acting on it. (Baker and Pawlikowski, 2012) Here in Figure 2, you can see the Burj Khalifa and a cross-section of it demonstrating the inside.  A buttressed-core system is a Y-shaped arrangement and central core to help the structure resist loads, especially lateral/wind forces, which is an excellent demonstration of how using geometry can help work around simply adding more material. (Baker and Pawlikowski, 2012) The building must deal with multiple different forces such as wind in addition to its already huge weight, which illustrates how real megastructures require multiple engineering considerations simultaneously. (Baker and Pawlikowski, 2012) These further highlight how modern engineering requires serious consideration of specialised materials, geometry and structural systems and other elements to create a building that will last a very long time. </p>
    
     <h2 id="Conclusion">6. Conclusion</h2>
     
-       <p class="article-text"> Conclusion</p>
+       <p class="article-text">Ultimately, buildings don’t have a clear numerical limit to how high or large they can possibly be, as constantly scaling a building brings attention to multiple physical and structural problems. Materials have finite capabilities and need to be selected very cautiously as they directly affect the mass of the building whilst also dictating how stable the building is under external forces. Furthermore, our L³ explains how mass increases much faster than the length of the building. Engineers understand that it’s a question of balancing constraints and making them work together rather than just trying to set unrealistic standards and spend a lot of time trying to force it to work. Therefore, the practical limit is how engineers can find an efficient and effective harmony between materials, mass, gravity and structural stability.</p>
     
     <h2 id="Reference List">Reference List</h2>
     
