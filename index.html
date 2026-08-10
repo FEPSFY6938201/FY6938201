@@ -166,7 +166,16 @@
       </li>
     </ul>
   
-    <button onclick="backToTop()">Back to Top</button>
+     <button onclick="backToTop()">Back to Top</button>
+
+     <script>
+        function backToTop() {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }
+  </script>
        
  
     
@@ -174,14 +183,7 @@
   </html>
 
 
-<script>
-        function backToTop() {
-          window.scrollTo({
-          top: 0,
-          behavior: "smooth
-          });
-        }
-</script>  
+ 
 
 
 
