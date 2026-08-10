@@ -54,7 +54,13 @@
         </style>
     </head>
 
-   <script>
+     <div id="last-updated">Loading last update time...</div>
+
+    <button onclick="verifyLastUpdatedTime()" style="display: block; margin: 10px auto; padding: 8px 16px;">
+    Verify Last Modified Time
+    </button>
+    
+    <script>
     async function getLastUpdatedTime() {
         const username = 'FEPSFY6938201';
         const repo = 'FY6938201';
