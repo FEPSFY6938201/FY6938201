@@ -228,62 +228,64 @@
     }
   </script>
        
- <!-- ////////////////////////////////////////////////////////////////////////// -->
-<!-- ////////////////////////// Word count function ////////////////////////// -->
-<!-- ////////////////////////////////////////////////////////////////////////// -->
 
-<!-- Placeholder for total word count -->
 <p id="totalWordCount"></p>
 
 <hr>
 
 <script>
 
-    // Function to calculate the word count for a specified section
-  function displayWordCount(sectionId) {
-
-        
-       const text = document.getElementById(sectionId).textContent;
-
-       
-      const wordArray = text.trim().split(/\s+/);
-
-        
-       const wordCount = wordArray.length;
-
-       
-      return wordCount;
-   }
+    
+    function displayWordCount(sectionId) {
 
     
-  function displayTotalWordCount() {
+        const heading = document.getElementById(sectionId);
+
+        let text = heading.textContent;
+
+     
+        let element = heading.nextElementSibling;
+
+  
+        while (element && element.tagName !== "H2") {
+            text += " " + element.textContent;
+            element = element.nextElementSibling;
+        }
+
+     
+        const wordArray = text.trim().split(/\s+/);
+
+  
+        return wordArray.length;
+    }
+
+
+    function displayTotalWordCount() {
 
        
-      const AbstractCount = displayWordCount("Abstract");
-      const IntroductionCount = displayWordCount("Introduction");
-      const MathematicsCount = displayWordCount("The Mathematics of Scaling");
-      const GravityCount = displayWordCount("Gravity and Structural Loading");
-      const MaterialCount = displayWordCount("Material Strength and Structural Stability");
-      const RealWorldCount = displayWordCount("Real-World Megastructures");
-      const ConclusionCount = displayWordCount("Conclusion");
+        const AbstractCount = displayWordCount("Abstract");
+        const IntroductionCount = displayWordCount("Introduction");
+        const MathematicsCount = displayWordCount("The Mathematics of Scaling");
+        const GravityCount = displayWordCount("Gravity and Structural Loading");
+        const MaterialCount = displayWordCount("Material Strength and Structural Stability");
+        const RealWorldCount = displayWordCount("Real-World Megastructures");
+        const ConclusionCount = displayWordCount("Conclusion");
+
+        const totalWordCount =
+            AbstractCount +
+            IntroductionCount +
+            MathematicsCount +
+            GravityCount +
+            MaterialCount +
+            RealWorldCount +
+            ConclusionCount;
 
         
-      const totalWordCount =
-          AbstractCount +
-          IntroductionCount +
-          MathematicsCount +
-          GravityCount +
-          MaterialCount +
-          RealWorldCount +
-          ConclusionCount;
+        document.getElementById("totalWordCount").innerText =
+            `Total word count: ${totalWordCount}`;
+    }
 
-       
-       document.getElementById("totalWordCount").innerText =
-           `Total word count: ${totalWordCount}`;
-   }
-
-   
-   window.addEventListener("load", displayTotalWordCount);
+    window.addEventListener("load", displayTotalWordCount);
 
 </script>
     
